@@ -1,0 +1,11 @@
+.vscode/
+env/
+/db_sqlite3
+.DS_Store
+*.log
+*.pyc
+__pycache__/
+instance/
+migrations/
+*.sqlite3
+models/
