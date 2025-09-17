@@ -85,8 +85,10 @@ Server will run at:
 ## 🔑 Authentication APIs
 
 - **POST** `/api/login/` → Login user
-- **GET** `/api/users/` → List users
-- **PUT** `/api/users/<id>/` → Update user
+- **POST** `/api/auth/` → Signup user
+- **GET** `/api/user/all/` → List users
+- **PUT** `/api/user/update/` → Update user
+- **GET** `/api/user/me/` → user Details
 
 ## 🩺 Prediction API
 
@@ -103,6 +105,7 @@ curl -X POST http://127.0.0.1:8000/api/predict/ \
 ```json
 {
   "class_label": "Malignant"
+  "confidence_score":"0.00"
 }
 ```
 
